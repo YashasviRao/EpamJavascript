@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>EPAM Login and Resitration</title>
+        <script type="text/javascript" src="login.js"></script>
+        <link rel="stylesheet" href="style.css">
+	</head>
+
+	<body style="background-color:grey;"  onload="load()">
+		
+		<div class="header" id="header">
+			<a class="brand" href="">EPAM</a>
+		
+			<ul class="left">
+				<li><input id="check" class="btn" type="button" onclick="check()" value=""></li>
+			</ul>
+		</div>
+
+		<div class="outer" id="outer">
+		
+			<div class="boxx" id="login">
+				
+				<form method="POST" id="form1" action="">
+					
+					<label for="email">Email ID&nbsp;&nbsp;&nbsp;</label>
+					<input  type="email" class="box" name="email" id="email" value="" placeholder="Email ID"><br>
+					<br><br>
+					
+					<label for="password">Password&nbsp;&nbsp;&nbsp;</label>
+					<input type="password"  class="box" name="password" id="password" value="" placeholder="Password">
+                     <p style="color:red;" id="error"><br></p>
+					<input class="button" type="button" value="Register" onclick="register()">
+
+					<input type="button" class="button"  value="Submit" onclick="isLoginEmpty()"> 
+				</form>
+			</div>
+
+
+			<div class="boxx" id="register">
+				
+				<form method="POST" id="form2" action="">
+					
+				<label  for="fname">First Name&nbsp;&nbsp;&nbsp;</label>
+				<input class="box" type="text" name="fname" id="fname" value="" placeholder="First Name"><br><br><br>
+				
+				<label for="lname">Last Name&nbsp;&nbsp;&nbsp;</label>
+				<input class="box" type="text" name="lname" id="lname" value="" placeholder="Last Name"><br><br><br>
+				
+				<label for="email">Email ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+				<input class="box" type="email" name="email" id="email1" value="" placeholder="Email ID"><br><br><br>
+				<label for="mob">Mobile No.&nbsp;&nbsp;</label>
+				<input class="box" type="text" name="mob" id="mob" value="" placeholder="Mobile No."><br><br><br>
+				
+				<label for="password">Password&nbsp;&nbsp;&nbsp;</label>
+				<input class="box" type="password" name="password" id="password1" value="" placeholder="Password"><br><br><br>
+                <p style="color:red;" id="error1">Heyy</p>
+				<input class="button" type="button" value="Login" onclick="login()">
+
+				<input class="button" type="button" value="Submit" onclick="isRegEmpty()"> 
+				</form>
+			</div>
+
+
+		</div>
+	
+	</body>
+   
+</html>
